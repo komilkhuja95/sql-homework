@@ -1,0 +1,25 @@
+-- Easy:
+--1) Define the following terms: data, database, relational database, and table
+--Answer: data - ma’lumot, database - ma’lumotlar bazasi, relational database - aloqador ma’lumotlar bazasi, table - jadval.
+--2) Five Key Features of SQL Server.
+--Answer: 1.Data Storage and Management (Ma’lumotlarni saqlash va boshqarish). 2.Security (Xavfsizlik). 3. Backup and Restore (Zaxiralash va tiklash). 4. Stored Procedures and Triggers (Saqlangan protseduralar va triggerlar). 5. Data Analysis and Reporting (Tahlil va hisobotlar).
+--3) What are the different authentication modes available when connecting to SQL Server?
+-- Answer: 1. Windows Authentication Mode. 2. SQL Server Authentication Mode (Mixed Mode).
+--Medium:
+--4) Create a new database in SSMS named SchoolDB.
+--Answer: Create database SchoolDB.
+--5) Write and execute a query to create a table called Students with columns: StudentID (INT, PRIMARY KEY), Name (VARCHAR(50)), Age (INT).
+--Answer: Create table Students (StudentID INT PRIMARY KEY, Name varchar(50), Age int).
+--6) Describe the differences between SQL Server, SSMS, and SQL.
+--Answer: SQL Server — bu asosiy dastur (server), ma’lumotlarni saqlaydi. SSMS — bu qulay oynali dastur, SQL Server bilan ishlash uchun. SQL — bu til, siz SSMS orqali SQL Server’ga buyruqlar berasiz.
+--Hard:
+--7) Research and explain the different SQL commands: DQL, DML, DDL, DCL, TCL with examples.
+--Answer: | Kategoriya | To‘liq nomi                  | Vazifasi                      | Misol                        |
+----------- **DQL**    | Data Query Language          | Ma’lumotni olish              | `SELECT`                     |
+----------- **DML**    | Data Manipulation Language   | Ma’lumotni qo‘shish/o‘chirish | `INSERT`, `UPDATE`, `DELETE` |
+----------- **DDL**    | Data Definition Language     | Tuzilma yaratish/o‘zgartirish | `CREATE`, `DROP`             |
+----------- **DCL**    | Data Control Language        | Ruxsatlarni boshqarish        | `GRANT`, `REVOKE`            |
+----------- **TCL**    | Transaction Control Language | Transaksiyalarni boshqarish   | `COMMIT`, `ROLLBACK`         |
+--8) Write a query to insert three records into the Students table.
+--Answer: insert into Students values (StudentID, Name, Age) (1, 'Ali', 20), (2, 'Laylo', 19), (3, 'Javohir', 21)
+--9) Restore AdventureWorksDW2022.bak file to your server. (write its steps to submit) You can find the database from this link :https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2022.bak
